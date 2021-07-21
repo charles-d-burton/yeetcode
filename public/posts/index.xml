@@ -13,7 +13,7 @@
       <pubDate>Tue, 20 Jul 2021 21:10:43 -0600</pubDate>
       
       <guid>http://yeetcode.wtf/posts/tifu/</guid>
-      <description>Today I fucked up. I tried to crash an entire satellite constellation.</description>
+      <description>Today I fucked up. I tried to crash an entire satellite constellation. It was a simple mistake really I was messing around with some our stupid system to deploy changes. We had a really old system based on a dead version of Unix and our configuration management was some ancient version of RCS. I&amp;rsquo;m pretty sure that nobody had used it in ages or made changes of any kind because what happened was me being a new hotshit member of the team.</description>
     </item>
     
   </channel>

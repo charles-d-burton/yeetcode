@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Tifu | I F*cked Up</title>
 <meta name="keywords" content="" />
-<meta name="description" content="Today I fucked up. I tried to crash an entire satellite constellation.">
+<meta name="description" content="Today I fucked up. I tried to crash an entire satellite constellation. It was a simple mistake really I was messing around with some our stupid system to deploy changes. We had a really old system based on a dead version of Unix and our configuration management was some ancient version of RCS. I&rsquo;m pretty sure that nobody had used it in ages or made changes of any kind because what happened was me being a new hotshit member of the team.">
 <meta name="author" content="">
 <link rel="canonical" href="http://yeetcode.wtf/posts/tifu/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
@@ -22,7 +22,7 @@
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.85.0" />
 <meta property="og:title" content="Tifu" />
-<meta property="og:description" content="Today I fucked up. I tried to crash an entire satellite constellation." />
+<meta property="og:description" content="Today I fucked up. I tried to crash an entire satellite constellation. It was a simple mistake really I was messing around with some our stupid system to deploy changes. We had a really old system based on a dead version of Unix and our configuration management was some ancient version of RCS. I&rsquo;m pretty sure that nobody had used it in ages or made changes of any kind because what happened was me being a new hotshit member of the team." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://yeetcode.wtf/posts/tifu/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-20T21:10:43-06:00" />
@@ -30,7 +30,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tifu"/>
-<meta name="twitter:description" content="Today I fucked up. I tried to crash an entire satellite constellation."/>
+<meta name="twitter:description" content="Today I fucked up. I tried to crash an entire satellite constellation. It was a simple mistake really I was messing around with some our stupid system to deploy changes. We had a really old system based on a dead version of Unix and our configuration management was some ancient version of RCS. I&rsquo;m pretty sure that nobody had used it in ages or made changes of any kind because what happened was me being a new hotshit member of the team."/>
 
 
 <script type="application/ld+json">
@@ -59,12 +59,12 @@
   "@type": "BlogPosting",
   "headline": "Tifu",
   "name": "Tifu",
-  "description": "Today I fucked up. I tried to crash an entire satellite constellation.",
+  "description": "Today I fucked up. I tried to crash an entire satellite constellation. It was a simple mistake really I was messing around with some our stupid system to deploy changes. We had a really old system based on a dead version of Unix and our configuration management was some ancient version of RCS. I\u0026rsquo;m pretty sure that nobody had used it in ages or made changes of any kind because what happened was me being a new hotshit member of the team.",
   "keywords": [
     
   ],
-  "articleBody": "Today I fucked up. I tried to crash an entire satellite constellation.\n",
-  "wordCount" : "12",
+  "articleBody": "Today I fucked up. I tried to crash an entire satellite constellation. It was a simple mistake really I was messing around with some our stupid system to deploy changes. We had a really old system based on a dead version of Unix and our configuration management was some ancient version of RCS. I’m pretty sure that nobody had used it in ages or made changes of any kind because what happened was me being a new hotshit member of the team. I thought it would be helpful to add the ability for every machine on our network to have the ability to use bash instead of only tcsh and csh. I made a change to the /etc/shells file in the RCS repo and distributed it. Little did I know that the telemetry input boxes were reading from that file to get their shell and their bootcode. It turns out that they needed a specific shell defined so that they could boot correctly. When I distributed the files it overwrote the file on the servers that the telemetry boxes were connected to. Now, this didn’t have an immediate effect. These machines were ancient and would occasionally reboot. So when the rebooted they just wouldn’t come back up. Eventually we were down to a single telemetry machine before we figured out what had happened. Corrected the file and suddenly everything came back online.\n",
+  "wordCount" : "232",
   "inLanguage": "en",
   "datePublished": "2021-07-20T21:10:43-06:00",
   "dateModified": "2021-07-20T21:10:43-06:00",
@@ -180,7 +180,8 @@
     <div class="post-meta">July 20, 2021
 </div>
   </header> 
-  <div class="post-content"><p>Today I fucked up.  I tried to crash an entire satellite constellation.</p>
+  <div class="post-content"><p>Today I fucked up.  I tried to crash an entire satellite constellation.  It was a simple mistake really
+I was messing around with some our stupid system to deploy changes.  We had a really old system based on a dead version of Unix and our configuration management was some ancient version of RCS.  I&rsquo;m pretty sure that nobody had used it in ages or made changes of any kind because what happened was me being a new hotshit member of the team.  I thought it would be helpful to add the ability for every machine on our network to have the ability to use <code>bash</code> instead of only <code>tcsh</code> and <code>csh</code>.  I made a change to the <code>/etc/shells</code> file in the RCS repo and distributed it.  Little did I know that the telemetry input boxes were reading from that file to get their shell and their bootcode.  It turns out that they needed a specific shell defined so that they could boot correctly.  When I distributed the files it overwrote the file on the servers that the telemetry boxes were connected to.  Now, this didn&rsquo;t have an immediate effect.  These machines were ancient and would occasionally reboot.  So when the rebooted they just wouldn&rsquo;t come back up.  Eventually we were down to a single telemetry machine before we figured out what had happened.  Corrected the file and suddenly everything came back online.</p>
 
 
   </div>
