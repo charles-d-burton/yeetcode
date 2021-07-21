@@ -1,0 +1,16 @@
+baseURL = "http://yeetcode.wtf/"
+languageCode = "en-us"
+title = "I F*cked Up"
+author = "Crusy Old Developer"
+theme = "PaperMod"
+paginate = 5
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
